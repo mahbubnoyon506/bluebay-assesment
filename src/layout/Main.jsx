@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
-        <div className='bg-gray-700 h-screen'>
+        <div className='bg-slate-100 h-screen'>
             <Outlet/>
         </div>
     );
