@@ -62,7 +62,7 @@ const ProblemSolve = () => {
 
     return (
         <div className='px-20 py-10'>
-            <div className='my-5 border p-5 border-purple-600'>
+            <div className='my-5 border p-5 border-indigo-800'>
                 <h2 className='text-2xl font-semibold text-slate-900'>Problem 1 solution:</h2>
                 <p>If the data is like this,</p>
                 <ul className='ml-16'>
@@ -75,7 +75,7 @@ const ProblemSolve = () => {
                 <p>Max profit for prices2: Buy on day {maxProfitDays2[0]} and sell on day {maxProfitDays2[1]}</p>
                 <p>Max profit for prices3: Buy on day {maxProfitDays3[0]} and sell on day {maxProfitDays3[1]}</p>
             </div>
-            <div className=' border p-5 border-purple-600'>
+            <div className=' border p-5 border-indigo-800'>
                 <h2 className='text-2xl font-semibold text-slate-900'>Problem 2 solution</h2>
                 <p>If the data is like this: </p>
                 <div className='flex items-center'>
