@@ -10,7 +10,6 @@ const Home = () => {
         e.preventDefault();
         axios.get(`/api/Student/list/${searchValue}`)
             .then(function (res) {
-
                 console.log(res)
             })
             .catch(function (error) {
