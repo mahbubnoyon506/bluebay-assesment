@@ -3,16 +3,20 @@ import { useNavigate } from 'react-router-dom';
 
 const ResultAdd = () => {
     const navigate = useNavigate();
-    const handleAddBangla = () => {
+    const handleAddBangla = (e) => {
+        e.preventDefault();
+        navigate('/found-student');
+    }
+    const handleAddEnglish = (e) => {
+        e.preventDefault();
         navigate('/found-student')
     }
-    const handleAddEnglish = () => {
+    const handleAddMath = (e) => {
+        e.preventDefault();
         navigate('/found-student')
     }
-    const handleAddMath = () => {
-        navigate('/found-student')
-    }
-    const handleAdScience = () => {
+    const handleAdScience = (e) => {
+        e.preventDefault();
         navigate('/found-student')
     }
     return (
@@ -30,7 +34,7 @@ const ResultAdd = () => {
                         </li>
                         <li className='flex items-center'>
                             <p className='font-semibold w-20'>English</p>
-                            <form onSubmit={handleAddEnglish }>
+                            <form onSubmit={handleAddEnglish}>
                                 <input className='mx-2 my-1 rounded border border-gray-700 py-2 px-2 focus:outline-none mr-2 w-56' type="text" name="" id="" />
                                 <button type='submit' className='px-5 h-10 bg-[#022534] rounded text-slate-100'>Save Result</button>
                             </form>
